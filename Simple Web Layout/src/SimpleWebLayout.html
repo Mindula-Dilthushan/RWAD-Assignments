@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RWAD-Assignment 04</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <style>
+
+        body > div {
+            width: 80vw;
+            top: 0;
+            height: 10vh;
+        }
+        body > section {
+            width: 25%;
+            height: auto;
+            position: absolute;
+            background: #5f27cd;
+            margin: 0 0 0 0;
+            margin-outside: 0 0 1px 0;
+        }
+        section > section {
+            width: 75vw;
+            left: 25.5vw;
+            top: 0;
+            right: 0;
+            resize: none;
+            margin: 5px 0 0 0;
+            position: relative;
+        }
+
+        body div > section {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 35vw;
+            height: 10vh;
+        }
+        div > section > div {
+            position: absolute;
+            width: 6vw;
+            height: 5vh;
+            font-size: 125%;
+            top: 30%;
+        }
+        div > section > div:nth-child(1) {
+            left: 0;
+        }
+        div > section > div:nth-child(2) {
+            left: calc((100% / 4) * 1);
+        }
+        div > section > div:nth-child(3) {
+            left: calc((100% / 4) * 2);
+        }
+        div > section > div:nth-child(4) {
+            left: calc((100% / 4) * 3);
+        }
+        hr {
+            position: absolute;
+            width: 75%;
+            height: 3px;
+            color: black;
+            background: black;
+            margin: 0 0 0 0;
+            right: 0;
+        }
+        aside {
+            position: absolute;
+            width: 20vw;
+            height: 25vh;
+        }
+        aside > div {
+            position: relative;
+            color: white;
+            padding: 3%;
+            font-size: 120%;
+            top: 5vh;
+        }
+        article:nth-child(1) {
+            width: 71vw;
+            height: 40vh;
+            position: relative;
+            top: 0px;
+            right: 0;
+            margin: 0 0 0 0;
+            background: blue;
+        }
+        article:nth-child(2) {
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: 0px;
+            right: 0;
+            margin: 0 0 0 0;
+        }
+        article > img:nth-child(1) {
+            width: calc(100% / 3);
+            height: 100%;
+            position: absolute;
+            border: darkblue solid 2px;
+            left: 0;
+        }
+        article > img:nth-child(2) {
+            width: calc(100% / 3);
+            height: 100%;
+            position: absolute;
+            border: darkblue solid 2px;
+            left: calc((100% / 3));
+        }
+        article > img:nth-child(3) {
+            width: calc(100% / 3);
+            height: 100%;
+            position: absolute;
+            border: darkblue solid 2px;
+            left: calc((100% / 3) * 2);
+        }
+        footer {
+            width: 100vw;
+            height: 10vh;
+            background: grey;
+            position: relative;
+        }
+        h4 {
+            color: white;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 150%;
+            margin: auto;
+            z-index: 3;
+            position: absolute;
+        }
+        p{
+            max-width: 110%;
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="asserts/ijse.png" height="60vh">
+    <section style="font-family: 'Roboto'">
+        <div>Home</div>
+        <div>Services</div>
+        <div>Contacts</div>
+        <div>About Us</div>
+    </section>
+</div>
+<hr>
+<section>
+    <aside style="left: 5%; font-family: 'Roboto' ">
+        <div> Home</div>
+        <div> Services</div>
+        <div> Contacts</div>
+        <div> About Us</div>
+    </aside>
+
+    <section>
+        <article class="titleBar">
+            <img src="asserts/1.jpg">
+            <img src="asserts/2.jpg">
+            <img src="asserts/3.jpg">
+        </article>
+
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+            consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+            consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo
+                consequat.</p>
+        </article>
+    </section>
+    <footer>
+        <h4 style="font-family: Roboto">Developed by IJSE</h4>
+    </footer>
+</section>
+</body>
+</html>

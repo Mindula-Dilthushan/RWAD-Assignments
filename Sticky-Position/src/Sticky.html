@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RWAD-Assignment 03</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <style>
+
+        body > aside{
+            height: 100vh;
+            border: 2px solid white;
+        }
+        aside > h2{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0 0 0 0;
+            font-size: 200px;
+            font-family: Bahnschrift;
+            font-weight: bolder;
+        }
+        aside:nth-child(1){
+            background: white;
+        }
+        aside:nth-child(2){
+            background: #71b9ff;
+        }
+        aside:nth-child(3){
+            background: #9c9c9c;
+        }
+        aside:nth-child(4){
+            background: #ff6536;
+        }
+        aside > div {
+            position: sticky;
+            width: 100%;
+            height: 10px;
+            margin: 0 0 0 0;
+            top: 0px;
+            left: 0px;
+            z-index: 2;
+        }
+        aside > div > section{
+            width: 100%;
+            height: 80px;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+        }
+        section > h3 {
+            color: white;
+            font-size: 30px;
+            top: 20px;
+            left: 10px;
+            margin: 0 0 0 0;
+            position: absolute;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+
+<aside>
+    <div>
+        <section style="background: #eb2f06">
+                <h3 style="font-family: 'Roboto">
+                   Card 1
+                </h3>
+        </section>
+    </div>
+</aside>
+
+<aside>
+    <div>
+        <section style="background: #341f97">
+            <h3 style="font-family: 'Roboto">
+                Card 2
+            </h3>
+        </section>
+    </div>
+</aside>
+
+<aside>
+    <div>
+        <section style="background: #434344 ">
+            <h3 style="font-family: 'Roboto">
+                Card 3
+            </h3>
+        </section>
+    </div>
+</aside>
+
+<aside>
+    <div>
+        <section style="background: #c0392b">
+            <h3 style="font-family: 'Roboto">
+                Card 4
+            </h3>
+        </section>
+    </div>
+</aside>
+
+</body>
+</html>
