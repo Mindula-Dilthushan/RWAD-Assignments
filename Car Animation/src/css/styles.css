@@ -1,0 +1,108 @@
+body {
+    background-image: url("../img/sky.jpg");
+    overflow: hidden;
+}
+
+#carname {
+    width: 30vw;
+    height: 20vh;
+    top: 50%;
+    left: 23%;
+    z-index: 5;
+    font-family: VALORANT;
+    color: #666666;
+    position: absolute;
+}
+
+#Car {
+    width: 30vw;
+    height: 20vh;
+    top: 50%;
+    left: 25%;
+    right: 70%;
+    z-index: 5;
+    position: absolute;
+    animation: cars 5s infinite;
+}
+
+#Wheel01 {
+    width: 20%;
+    height: 10%;
+    bottom: 22%;
+    right: 11%;
+    position: absolute;
+}
+
+#Wheel02 {
+    width: 20%;
+    height: 10%;
+    bottom: 22%;
+    right: 71.5%;
+    position: absolute;
+}
+
+#road {
+    width: 300%;
+    height: 80vh;
+    top: 68.5%;
+
+    position: absolute;
+    animation: roads 5s infinite;
+}
+
+#city {
+    width: 200vw;
+    height: 500px;
+    display: flex;
+    bottom: 42vh;
+    background-repeat: no-repeat;
+    animation: citys 5s infinite;
+}
+
+#Wheel01 > img {
+    animation: wheels 5s infinite;
+}
+
+#Wheel02 > img {
+    animation: wheels 5s infinite;
+}
+
+
+@keyframes cars {
+    0% {
+
+    }
+    100% {
+        transform: translateX(40px);
+    }
+}
+
+@keyframes wheels {
+    0% {
+
+    }
+    100% {
+        transform: rotate(900deg);
+    }
+}
+
+@keyframes citys {
+    0% {
+
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
+@keyframes roads {
+    0% {
+
+    }
+    100% {
+        transform: translateX(-60%);
+    }
+
+
+}
