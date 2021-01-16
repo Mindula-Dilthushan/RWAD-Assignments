@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="css/normalize.css">
 
     <style>
-        section{
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background : radial-gradient(circle, #002aff, #003bff, #0049ff, #0055ff, #0060ff, #0073ff, #0084ff, #0094ff, #00acff, #00c2ff, #00d6ff, #2be9ff);
+        }
+        section {
             width: 60px;
             height: 60px;
             border-radius: 100%;
-            border: #0389ff 5px solid;
+            border: white 5px solid;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -19,21 +25,15 @@
             right: 0;
             margin: auto;
             opacity: 1;
-
             animation-name: water;
             animation-duration: 2s;
             animation-iteration-count: infinite;
         }
-
         @keyframes water {
-            0%{
+            0% {
                 opacity: 1;
             }
-            50%{
-                border: #1bd900 5px solid;
-            }
-            100%{
-                border: #1bd900 5px solid;
+            100% {
                 width: 400px;
                 height: 400px;
                 opacity: 0;
@@ -43,6 +43,6 @@
 </head>
 <body>
 
-    <section> </section>
+<section></section>
 </body>
 </html>
