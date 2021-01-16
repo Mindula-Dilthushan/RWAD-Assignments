@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-Circle Transition</title>
+    <link href="src/css/normalize.css" rel="stylesheet">
+
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(to right top, #0fbc00, #22c80a, #31d513, #3de11b, #49ee22, #66f425, #7ef92a, #93ff2f, #b2ff39, #cdff45, #e3ff53, #f7ff63);;
+        }
+
+        section {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        section::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            background: #6c6c6c;
+            border: 14px solid white;
+            border-radius: 100%;
+            border-top: 14px solid #54A0FF;
+            cursor: pointer;
+        }
+
+        section:hover {
+            transform: rotate(360deg);
+            transition: all 1s;
+        }
+
+        aside {
+            width: 150px;
+            height: 10px;
+            background: #54A0FF;
+            position: absolute;
+            transform: rotate(133deg);
+            right: 0;
+            left: 33%;
+            top: 0;
+            bottom: 38%;
+            margin: auto;
+        }
+
+        div {
+            width: 30px;
+            height: 30px;
+            background: #54A0FF;
+            border-radius: 100%;
+            bottom: 70%;
+            right: 0;
+            top: 0;
+            left: 63%;
+            margin: auto;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <aside>
+    </aside>
+    <div>
+    </div>
+</section>
+</body>
+</html>
