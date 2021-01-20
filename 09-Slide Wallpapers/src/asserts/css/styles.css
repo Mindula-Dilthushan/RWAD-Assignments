@@ -1,0 +1,45 @@
+body{
+    overflow: hidden;
+}
+section{
+    width: 500vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+
+    animation-name: slideshow;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+aside{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+img{
+    width: 100vw;
+    height: 100vh;
+}
+@keyframes slideshow{
+    0%{
+        margin-left: 0px;
+    }
+    20%{
+        margin-left: -100vw;
+    }
+    40%{
+        margin-left: -200vw;
+    }
+    60%{
+        margin-left: -300vw;
+    }
+    80%{
+         margin-left: -400vw;
+     }
+    100%{
+        margin-left: -500vw;
+    }
+
+}
